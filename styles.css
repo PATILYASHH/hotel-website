@@ -1,0 +1,276 @@
+/* General Styles */
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    overflow: hidden;
+}
+
+ h2, h3 {
+    color: #ff6600;
+}
+
+a {
+    color: #ff6600;
+    text-decoration: none;
+}
+
+.btn {
+    background-color: #ff6600;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background-color: #e55b00;
+}
+
+/* Header */
+header {
+    background-color: #ff6600;
+    color: #fff;
+    padding: 20px 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+/* Hero Section */
+.hero {
+    background: url('hero.jpg') no-repeat center center/cover;
+    color: #fff;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero h2 {
+    font-size: 48px;
+    margin: 0 0 20px 0;
+}
+
+.hero p {
+    font-size: 24px;
+    margin: 0 0 20px 0;
+}
+
+/* Featured Section */
+#featured .carousel {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+}
+
+.carousel-item {
+    min-width: 300px;
+    flex: 0 0 auto;
+    margin: 10px;
+    scroll-snap-align: start;
+    text-align: center;
+}
+
+.carousel-item img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Special Offers Section */
+#offers .offer {
+    background-color: #f8f8f8;
+    padding: 20px;
+    margin: 20px 0;
+    text-align: center;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+}
+
+#offers .offer h3 {
+    margin: 0 0 10px 0;
+}
+
+/* Menu Section */
+#menu .search-bar {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#menu .search-bar input {
+    width: 100%;
+    max-width: 400px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+#menu .filter {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#menu .filter button {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+#menu .filter button:hover {
+    background-color: #ff6600;
+    color: #fff;
+}
+
+#menu .menu-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+#menu .menu-item {
+    text-align: center;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+#menu .menu-item img {
+    width: 100%;
+    border-radius: 10px;
+    /* margin-bottomHere's the continuation and completion of the CSS code for the snack shop website template: */
+
+/* ```css */}
+/* Continued CSS for Menu Section */
+#menu .menu-item img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+#menu .menu-item:hover {
+    transform: translateY(-5px);
+}
+
+/* About Section */
+#about {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+#about p {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Contact Section */
+#contact form {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    margin: auto;
+}
+
+#contact label {
+    margin-top: 10px;
+}
+
+#contact input, #contact textarea {
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+#contact .btn {
+    margin-top: 20px;
+}
+
+#contact .contact-info {
+    text-align: center;
+    margin-top: 40px;
+}
+
+#contact .social-media a {
+    color: #ff6600;
+    font-size: 24px;
+    margin: 0 10px;
+}
+
+#contact .social-media a:hover {
+    color: #e55b00;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer p {
+    margin: 0;
+}
+
+h1 {
+    color: white;
+    font-size: 50px;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* Watermark */
+.watermark {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.7);
+    text-decoration: none;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 5px 10px;
+    border-radius: 5px;
+    z-index: 1000;
+}
+
+.watermark:hover {
+    color: #fff;
+    background: rgba(0, 0, 0, 0.8);
+}
+

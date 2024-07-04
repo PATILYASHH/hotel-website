@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snack Shop</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+
+        <div class="container">
+            <h1 class="name">Vijay Hotel , Snack Shop</h1>
+            <nav>
+                <ul>
+                   
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home">
+        <div class="hero">
+            <h2>Fresh Snacks Delivered Fast!</h2>
+            <p>Enjoy our delicious snacks at your doorstep.</p>
+            <a href="#menu" class="btn">Order Now</a>
+        </div>
+    </section>
+
+    <!-- Featured Snacks Section -->
+    <section id="featured" class="container">
+        <h2>Featured Snacks</h2>
+        <div class="carousel">
+            <div class="carousel-item">
+                <img src="food.png" alt="Snack 1">
+                <h3>Samosa</h3>
+                <p>Crispy and delicious.</p>
+            </div>
+            <div class="carousel-item">
+                <img src="food.png" alt="Snack 2">
+                <h3>Kachori</h3>
+                <p>Flaky and spicy.</p>
+            </div>
+
+            <div class="carousel-item">
+                <img src="food.png" alt="Snack 2">
+                <h3>Kachori</h3>
+                <p>Flaky and spicy.</p>
+            </div>
+
+            <div class="carousel-item">
+                <img src="food.png" alt="Snack 2">
+                <h3>Kachori</h3>
+                <p>Flaky and spicy.</p>
+            </div>
+
+            <div class="carousel-item">
+                <img src="food.png" alt="Snack 2">
+                <h3>Kachori</h3>
+                <p>Flaky and spicy.</p>
+            </div>
+
+            <div class="carousel-item">
+                <img src="food.png" alt="Snack 2">
+                <h3>Kachori</h3>
+                <p>Flaky and spicy.</p>
+            </div>
+
+            <div class="carousel-item">
+                <img src="food.png" alt="Snack 2">
+                <h3>Kachori</h3>
+                <p>Flaky and spicy.</p>
+            </div>
+
+
+            <!-- Add more carousel items as needed -->
+        </div>
+    </section>
+
+    <!-- Special Offers Section -->
+    <section id="offers" class="container">
+        <h2>Special Offers</h2>
+        <div class="offer">
+            <h3>Buy 1 Get 1 Free</h3>
+            <p>On all samosas.</p>
+        </div>
+        <div class="offer">
+            <h3>20% Off</h3>
+            <p>On orders above $20.</p>
+        </div>
+        <!-- Add more offers as needed -->
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="container">
+        <h2>Our Menu</h2>
+        <div class="search-bar">
+            <input type="text" placeholder="Search snacks...">
+        </div>
+        <div class="filter">
+            <button>All</button>
+            <button>Chips</button>
+            <button>Beverages</button>
+            <button>Desserts</button>
+        </div>
+        <div class="menu-grid">
+            <div class="menu-item">
+                <img src="food.png" alt="Snack 1">
+                <h3>Samosa</h3>
+                <p>$1.50</p>
+            </div>
+            <div class="menu-item">
+                <img src="food.png" alt="Snack 2">
+                <h3>Kachori</h3>
+                <p>$1.75</p>
+            </div>
+            <!-- Add more menu items as needed -->
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="container">
+        <h2>About Us</h2>
+        <p>Welcome to Snack Shop, your go-to place for fresh and delicious snacks. Our journey started...</p>
+        <!-- Add team member bios and gallery if needed -->
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="container">
+        <h2>Contact Us</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+        <div class="contact-info">
+            <p>123 Snack St., City, Country</p>
+            <p>Phone: +123 456 7890</p>
+            <p>Email: <a href="mailto:info@snackshop.com">info@snackshop.com</a></p>
+            <div class="social-media">
+                <a href="https://github.com/patilyashh"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+
+        <a href="https://patilyash.vercel.app" class="watermark" target="_blank">patilyash.vercel.app</a>
+
+        <div class="container">
+            <p>&copy; 2024 Snack Shop. All rights reserved.</p>
+
+        </div>
+        <script>
+            document.getElementById('viewCollectionBtn').addEventListener('click', function() {
+                document.getElementById('collection').scrollIntoView({ behavior: 'smooth' });
+            });
+        </script>
+        <script src="script.js" crossorigin="anonymous"></script>
+    </footer>
+</body>
+</html>
